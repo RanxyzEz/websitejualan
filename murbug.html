@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MurBug - Ranxyz Official</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Produk MurBug - Ranxyz Official</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
@@ -15,95 +15,88 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 30px;
       min-height: 100vh;
-      padding: 20px;
     }
 
-    .card {
-      background-color: rgba(0, 0, 0, 0.75);
-      padding: 30px;
-      border-radius: 25px;
-      width: 100%;
+    .container {
       max-width: 500px;
-      box-shadow: 0 0 30px rgba(0, 255, 200, 0.3);
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.75);
+      border-radius: 20px;
+      padding: 30px;
       text-align: center;
+      box-shadow: 0 0 20px rgba(0, 255, 200, 0.2);
     }
 
     h1 {
-      font-size: 1.8em;
       color: #00ffe5;
       margin-bottom: 20px;
-      text-shadow: 0 0 10px #00ffe5;
+      text-shadow: 0 0 8px #00ffe5;
     }
 
-    .section {
-      margin-bottom: 30px;
-      background-color: rgba(255, 255, 255, 0.05);
+    .product {
+      background: #1e1e2f;
       border-radius: 15px;
-      padding: 15px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,255,255,0.1);
     }
 
-    .section h2 {
-      font-size: 1.2em;
+    .product h2 {
+      margin: 0;
       color: #00ffd5;
-      margin-bottom: 10px;
     }
 
-    .section p {
-      margin: 5px 0;
+    .product p {
+      margin: 10px 0;
+      color: #ccc;
       font-size: 0.95em;
-      color: #ddd;
     }
 
-    .back-btn {
-      margin-top: 20px;
-      padding: 10px 20px;
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 20px;
       font-weight: bold;
-      font-size: 1em;
+      color: #000;
+      background: linear-gradient(45deg, #00ffd5, #00b3ff);
       border: none;
       border-radius: 10px;
-      background: linear-gradient(45deg, #00ffd5, #00b3ff);
-      color: black;
-      cursor: pointer;
+      text-decoration: none;
       transition: 0.3s;
     }
 
-    .back-btn:hover {
+    .btn:hover {
       transform: scale(1.05);
       opacity: 0.9;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>📦 MurBug - Ranxyz Official</h1>
+  <div class="container">
+    <h1>🔥 Daftar Produk MurBug</h1>
 
-    <div class="section">
+    <div class="product">
       <h2>MurBug</h2>
-      <p><strong>Harga:</strong> 15K</p>
-      <p><strong>Benefit:</strong></p>
-      <p>- Bebas bug</p>
-      <p>- Bisa open jasbug</p>
+      <p><strong>Harga:</strong> 15k</p>
+      <p><strong>Benefit:</strong><br>- Bebas bug<br>- Bisa open jasbug</p>
+      <a class="btn" href="https://wa.me/6282280910243?text=Hallo%20saya%20ingin%20order%20MurBug">Order via WhatsApp</a>
     </div>
 
-    <div class="section">
+    <div class="product">
       <h2>Reseller MurBug</h2>
-      <p><strong>Harga:</strong> 30K</p>
-      <p><strong>Benefit:</strong></p>
-      <p>- Bebas bug</p>
-      <p>- Bisa open MurBug di GB gw</p>
+      <p><strong>Harga:</strong> 30k</p>
+      <p><strong>Benefit:</strong><br>- Bebas bug<br>- Bisa open MurBug di GB gw</p>
+      <a class="btn" href="https://wa.me/6282280910243?text=Hallo%20saya%20ingin%20jadi%20Reseller%20MurBug">Order via WhatsApp</a>
     </div>
 
-    <div class="section">
+    <div class="product">
       <h2>Admin MurBug</h2>
-      <p><strong>Harga:</strong> 50K</p>
-      <p><strong>Benefit:</strong></p>
-      <p>- Bisa open MurBug di GB gw</p>
-      <p>- Bisa open reseller</p>
-      <p>- Dapat SC bug</p>
+      <p><strong>Harga:</strong> 50k</p>
+      <p><strong>Benefit:</strong><br>- Bisa open MurBug di GB gw<br>- Bisa open reseller<br>- Dapat script bug</p>
+      <a class="btn" href="https://wa.me/6282280910243?text=Hallo%20saya%20ingin%20jadi%20Admin%20MurBug">Order via WhatsApp</a>
     </div>
-
-    <button class="back-btn" onclick="window.location.href='index.html'">⬅️ Kembali ke Beranda</button>
   </div>
 </body>
 </html>
