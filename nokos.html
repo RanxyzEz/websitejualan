@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Produk Nokos WhatsApp</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+      color: white;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+      background-color: rgba(0,0,0,0.7);
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(0, 255, 200, 0.3);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.8em;
+      color: #00ffe5;
+      text-shadow: 0 0 8px #00ffe5;
+      margin-bottom: 25px;
+    }
+
+    .product {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1a1a2e;
+      margin: 10px 0;
+      padding: 15px 20px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+      color: white;
+      font-weight: 600;
+      font-size: 1em;
+    }
+
+    .product:hover {
+      background-color: #23234a;
+      transform: scale(1.02);
+    }
+
+    .price {
+      color: #00ffe5;
+      font-weight: bold;
+    }
+
+    .back-btn {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 12px 25px;
+      border-radius: 12px;
+      background: linear-gradient(45deg, #00ffd5, #00b3ff);
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 10px #00ffe5;
+    }
+
+    .back-btn:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📱 Produk Nokos WhatsApp</h1>
+
+    <div class="product" onclick="redirect('NOKOS INDO')">NOKOS INDO <span class="price">5K</span></div>
+    <div class="product" onclick="redirect('NOKOS FILIPINA')">NOKOS FILIPINA <span class="price">6K</span></div>
+    <div class="product" onclick="redirect('NOKOS CHINA')">NOKOS CHINA <span class="price">18K</span></div>
+    <div class="product" onclick="redirect('NOKOS MALAYSIA')">NOKOS MALAYSIA <span class="price">16K</span></div>
+    <div class="product" onclick="redirect('NOKOS KENYA')">NOKOS KENYA <span class="price">6K</span></div>
+    <div class="product" onclick="redirect('NOKOS POLAND')">NOKOS POLAND <span class="price">20K</span></div>
+    <div class="product" onclick="redirect('NOKOS CANADA')">NOKOS CANADA <span class="price">8K</span></div>
+    <div class="product" onclick="redirect('NOKOS JEPANG')">NOKOS JEPANG <span class="price">90K</span></div>
+    <div class="product" onclick="redirect('NOKOS BRAZIL')">NOKOS BRAZIL <span class="price">20K (kadang stok)</span></div>
+    <div class="product" onclick="redirect('NOKOS THAILAND')">NOKOS THAILAND <span class="price">14K</span></div>
+    <div class="product" onclick="redirect('NOKOS FRANCE')">NOKOS FRANCE <span class="price">10K (kadang stok)</span></div>
+    <div class="product" onclick="redirect('NOKOS SINGAPURA')">NOKOS SINGAPURA <span class="price">250K</span></div>
+
+    <a href="index.html" class="back-btn">⬅️ Kembali ke Beranda</a>
+  </div>
+
+  <script>
+    function redirect(productName) {
+      const nomorWA = "6282280910243"; // Ganti dengan nomor WhatsApp tujuan
+      const pesan = `Halo, saya tertarik membeli ${productName}`;
+      const url = `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`;
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>
