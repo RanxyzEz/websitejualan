@@ -3,91 +3,169 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ranxyz Official</title>
+  <title>Ranxyz Official - Hosting & Script Center</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 20px;
+      background: linear-gradient(to bottom, #090e24, #101631);
+      color: #ffffff;
+    }
+
+    header {
+      padding: 40px 20px;
+      text-align: center;
+      background: linear-gradient(145deg, #0e1a40, #0f2d60);
+      box-shadow: 0 4px 20px rgba(0, 255, 255, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #00ffe5;
+      text-shadow: 0 0 10px #00ffe5;
+    }
+
+    header p {
+      font-size: 1.1em;
+      color: #ccc;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
     }
 
     .card {
-      background-color: rgba(0, 0, 0, 0.75);
-      padding: 30px;
-      border-radius: 25px;
+      background: #111a3b;
+      border-radius: 20px;
+      padding: 25px;
       text-align: center;
-      width: 100%;
-      max-width: 430px;
-      box-shadow: 0 0 30px rgba(0, 255, 200, 0.3);
+      transition: 0.3s;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
     }
 
-    .title {
-      font-size: 1.6em;
-      font-weight: bold;
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+    }
+
+    .card h3 {
       color: #00ffe5;
-      text-shadow: 0 0 10px #00ffe5;
       margin-bottom: 15px;
     }
 
-    .description {
-      font-size: 1em;
-      color: #ccc;
-      margin-bottom: 20px;
+    .card p {
+      font-size: 0.95em;
+      color: #aaa;
     }
 
-    .character-img {
-      width: 200px;
-      border-radius: 20px;
-      margin: 20px auto;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-    }
-
-    .btn {
-      display: block;
-      width: 100%;
-      padding: 14px;
-      margin: 12px 0;
+    .card button {
+      margin-top: 15px;
+      padding: 12px 20px;
       font-size: 1em;
-      font-weight: 600;
+      font-weight: bold;
       border: none;
-      border-radius: 15px;
+      border-radius: 12px;
       cursor: pointer;
-      background: linear-gradient(45deg, #00ffd5, #00b3ff);
-      color: black;
-      text-shadow: 0 0 2px #fff;
-      transition: transform 0.2s, opacity 0.2s;
+      background: linear-gradient(to right, #00ffe5, #0099ff);
+      color: #000;
+      transition: 0.3s;
     }
 
-    .btn:hover {
-      transform: scale(1.03);
-      opacity: 0.9;
+    .card button:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9em;
+      color: #666;
+      background: #0b122c;
+    }
+
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 1.8em;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <div class="title">Selamat Datang di Ranxyz Official 🚀📦🌟</div>
-    <div class="description">
-      Solusi cepat & terpercaya untuk kebutuhan VPS, Panel, dan Script WhatsApp. Harga Murah, Performa Terjamin 💻
-    </div>
-    <img class="character-img" src="https://files.catbox.moe/luuwmk.jpeg" alt="Karakter Maskot" />
 
-    <button class="btn" onclick="window.location.href='vps.html'">💻 Beli VPS</button>
-    <button class="btn" onclick="window.location.href='panel.html'">⚙️ Panel Pterodactyl</button>
-    <button class="btn" onclick="window.location.href='script.html'">🐞 Script Bug WhatsApp</button>
-    <button class="btn" onclick="window.location.href='sewabot.html'">🤖 Sewa Bot Push Kontak</button>
-    <button class="btn" onclick="window.location.href='suntiksosmed.html'">📲 Suntik Sosmed</button>
-    <button class="btn" onclick="window.location.href='murbug.html'">🔥 MurBug</button>
-    <button class="btn" onclick="window.location.href='murband.html'">⚡ MurBand</button>
-    <button class="btn" onclick="window.location.href='https://t.me/testimoni_ranxyz'">🗣️ Testimoni</button>
+  <header>
+    <h1>Ranxyz Official 🚀</h1>
+    <p>Solusi Murah & Cepat untuk VPS, Panel, Script Bug WhatsApp, dan Tools Lainnya.</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h3>💻 VPS Murah</h3>
+      <p>Performa tinggi, harga bersahabat. Cocok untuk pemula & bisnis.</p>
+      <button onclick="window.location.href='vps.html'">Lihat Produk</button>
+    </div>
+
+    <div class="card">
+      <h3>⚙️ Panel Pterodactyl</h3>
+      <p>Kelola server Anda dengan mudah menggunakan panel hosting terbaik.</p>
+      <button onclick="window.location.href='panel.html'">Lihat Produk</button>
+    </div>
+
+    <div class="card">
+      <h3>🐞 Script Bug WhatsApp</h3>
+      <p>Kumpulan script premium untuk testing WhatsApp dengan fitur lengkap.</p>
+      <button onclick="window.location.href='script.html'">Lihat Produk</button>
+    </div>
+
+    <div class="card">
+      <h3>🤖 Sewa Bot Push Kontak</h3>
+      <p>Bot siap pakai untuk push massal & testing WhatsApp.</p>
+      <button onclick="window.location.href='sewabot.html'">Lihat Produk</button>
+    </div>
+
+    <div class="card">
+      <h3>📲 Suntik Sosmed</h3>
+      <p>Followers & likes sosial media otomatis dan cepat.</p>
+      <button onclick="window.location.href='suntiksosmed.html'">Lihat Produk</button>
+    </div>
+
+    <div class="card">
+      <h3>🐛 MurBug</h3>
+      <p>Paket bug viewOnce murah dengan banyak benefit & akses komunitas.</p>
+      <button onclick="window.location.href='murbug.html'">Lihat Produk</button>
+    </div>
+
+    <div class="card">
+      <h3>💣 MurBand</h3>
+      <p>Script band massal WhatsApp, bisa mention ribuan kontak.</p>
+      <button onclick="window.location.href='murband.html'">Lihat Produk</button>
+    </div>
+
+    <div class="card">
+      <h3>📱 Nokos WhatsApp</h3>
+      <p>Nokos berbagai negara untuk kebutuhan testing dan WA baru.</p>
+      <button onclick="window.location.href='nokos.html'">Lihat Produk</button>
+    </div>
+
+    <div class="card">
+      <h3>🧾 Testimoni</h3>
+      <p>Lihat bukti nyata pelayanan kami di channel Telegram resmi.</p>
+      <button onclick="window.location.href='https://t.me/testimoni_ranxyz'">Lihat Testimoni</button>
+    </div>
   </div>
+
+  <footer>
+    &copy; 2025 Ranxyz Official. All rights reserved.
+  </footer>
+
 </body>
 </html>
